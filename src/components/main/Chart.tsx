@@ -61,7 +61,7 @@ const Chart = () => {
         max: 800,
         ticks: {
           callback: (value: string | number) =>
-            value == 0 || value == 500 ? value : 0,
+            value == 0 || value == 500 ? value : "",
         },
         beginAtZero: true,
       },
