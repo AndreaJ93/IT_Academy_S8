@@ -2,5 +2,14 @@
   "totalBalance": "Total Balance",
   "chartTitle": "Expenses - Last week",
   "todayExpenses": "today expenses",
-  "variation": "compared to yesterday"
+  "variation": "compared to yesterday",
+  "day": {
+    "Mon": "Mon",
+    "Tue": "Tue",
+    "Wed": "Wed",
+    "Thu": "Thu",
+    "Fri": "Fri",
+    "Sat": "Sat",
+    "Sun": "Sun"
+  }
 }

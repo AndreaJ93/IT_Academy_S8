@@ -14,17 +14,27 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 
 const Chart = () => {
   const weekExpenses = useAppSelector((state) => state.expense.weekExpenses);
-  const today = useAppSelector((state) => state.expense.today);
+  const week = useAppSelector((state) => state.expense.actualWeek);
   const { t } = useTranslation();
+  const today = useAppSelector((state) => state.expense.today);
 
-  const days = weekExpenses.map((day) => day.day);
-  const expense = weekExpenses.map((day) => day.expense);
+  const expense = weekExpenses
+    .filter((day) => day.week === week)
+    .map((day) => day.expense);
   const colors = weekExpenses.map((day) =>
     day.day === today ? "#75B5BF" : "#ED755D"
   );
 
   const data: ChartData<"bar"> = {
-    labels: days,
+    labels: [
+      t("day.Mon"),
+      t("day.Tue"),
+      t("day.Wed"),
+      t("day.Thu"),
+      t("day.Fri"),
+      t("day.Sat"),
+      t("day.Sun"),
+    ],
     datasets: [
       {
         label: "Expenses",

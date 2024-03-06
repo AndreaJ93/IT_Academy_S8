@@ -2,5 +2,14 @@
   "totalBalance": "Balance Total",
   "chartTitle": "Gastos - Última semana",
   "todayExpenses": "Gastos hoy",
-  "variation": "respecto ayer"
+  "variation": "respecto ayer",
+  "day": {
+    "Mon": "L",
+    "Tue": "M",
+    "Wed": "X",
+    "Thu": "J",
+    "Fri": "V",
+    "Sat": "S",
+    "Sun": "D"
+  }
 }
