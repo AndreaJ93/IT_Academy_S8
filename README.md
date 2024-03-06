@@ -14,3 +14,4 @@ Tecnologías Utilizadas:
 - ChartJs
 - Tyspescript
 - Vitest (para pruebas unitarias de los componentes)
+- SonarCloud (para revisión de código)
