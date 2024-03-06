@@ -1,7 +1,7 @@
 {
   "totalBalance": "Total Balance",
   "chartTitle": "Expenses - Last week",
-  "todayExpenses": "today expenses",
+  "todayExpenses": "Today expenses",
   "variation": "compared to yesterday",
   "day": {
     "Mon": "Mon",

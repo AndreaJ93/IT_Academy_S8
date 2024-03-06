@@ -82,9 +82,10 @@ export const expenseSlice = createSlice({
         (day) => day.day === action.payload - 1
       )?.expense;
 
-      const gap =
-        (todayExpenses ? todayExpenses : 0) -
-        (yesterdayExpenses ? yesterdayExpenses : 0);
+      const tE = todayExpenses ? todayExpenses : 0;
+      const yE = yesterdayExpenses ? yesterdayExpenses : 0;
+
+      const gap = tE - yE;
 
       state.variation = todayExpenses ? (gap * 100) / todayExpenses : 0;
     },

@@ -1,5 +1,5 @@
 import { getTodayExpense } from "../../redux/slices/expenseSlice";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Variation from "./Variation";
 import { useAppDispatch, useAppSelector } from "../../redux/hooks";
 import { useTranslation } from "react-i18next";
@@ -11,7 +11,7 @@ const Expenses = () => {
 
   const dispatch = useAppDispatch();
 
-  useState(() => {
+  useEffect(() => {
     dispatch(getTodayExpense(day));
   });
 
