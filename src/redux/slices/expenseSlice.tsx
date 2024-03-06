@@ -82,8 +82,8 @@ export const expenseSlice = createSlice({
         (day) => day.day === action.payload - 1
       )?.expense;
 
-      const tE = todayExpenses ? todayExpenses : 0;
-      const yE = yesterdayExpenses ? yesterdayExpenses : 0;
+      const tE = todayExpenses ?? 0;
+      const yE = yesterdayExpenses ?? 0;
 
       const gap = tE - yE;
 
