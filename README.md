@@ -1,4 +1,4 @@
-#Expenses website
+##Expenses website
 
 Este proyecto es una aplicación web que muestra información sobre los gastos semanales.
 
